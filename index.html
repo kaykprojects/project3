@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">  
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,400;1,500&display=swap" rel="stylesheet"> 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Equality Map Data</title>
+</head>
+<body>
+
+    <header>
+      <h1>Welcome to - <span>Can you Guess?</span></h1>
+    </header>
+
+    <div class="mainWrapper">
+      <h2>Everything to do with Equality and Power   ==================</h2>
+      
+      <h4>When poverty is right at your door, <span>there is no room for advanced thinking.</span></h4>
+      <p>Poverty exacerbates the level of existing inequality, potentially affecting multiple generations. The vicious cycle of fear, frustration and starvation continues.</p>
+      <br>==================
+
+      <p class="beginComment" >A: This microchip is so cheap, just $30! You can use it for opening the doors, just like a magic!</p>
+      <p class="beginComment">B: I don't have a sofisticated security system in my house, <br>and I got no money to buy food for tomorrow. <br>What an earth are you talking about???</p>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <form>       
+
+        <div class="one" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p >1. Can you guess how many women over 15 live on less than $1.90 per day?</p>
+
+          <input id="one" type="radio" name="dailyWomen" value='2'>
+          <label for="one"> 2 Million</label>
+          <input type="radio" id="two" name="dailyWomen" value='52'>
+          <label for="two"> 52 Million</label>
+          <input type="radio" id="three" name="dailyWomen" value='247' class="answer">
+          <label for="three"> 247 Million</label>
+          <p class="toggle">247 million more women than men are projected to live under $1.9 per day in 2021</p>
+        </div>
+        
+
+        <div class="two" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>2. Can you guess if gender poverty gaps will likely to worsen by 2030, taking COVID-19 into consideration? </p>
+          <input type="radio" id="gap1" class="answer" name="gap">
+          <label for="gap1">Yes, it will get worse.</label>
+          <input type="radio" id="gap2" name="gap" >
+          <label for="gap2">No, it will get better.</label>
+          <p class="toggle">According to the UN report, gender poverty gap is worse due to COVID-19, and it is projected around 232 million women over 15  will live under extreme poverty compared to 221 million men</p>
+        </div>
+
+        <div class="three" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>3. Can you guess how many women can escape their poverty globally by gender-responsive policies implemented by their governments? </p>
+          <input type="radio" id="help1" name="help">
+          <label for="help1">1/10, being 25 million women</label>
+          <input type="radio" id="help2" class="answer" name="help">
+          <label for="help2">Over 100 million women</label>
+          <p class="toggle">Policies improving access to education, family planning and equal wages will help a lot of women in the world</p>
+        </div>  
+
+        <div class="group" data-aos="fade-up" data-aos-anchor-placement="center-center">
+          <h5 id="title">Gender equality by Income Group, 100% being the best</h5>
+          <svg id="container" height="250" width="500">
+            <g id="body" style="transform:translate(120px, 0px)"> </g>
+            <g id="yAxis"></g>
+            <g id="xAxis"></g>
+          </svg>
+          <p class="legend">The relationship between Gender Equality and Global Income Group</p>
+          <div id="tooltip">Tooltip</div> 
+          <a href="https://openknowledge.worldbank.org/bitstream/handle/10986/35094/9781464816529.pdf" target="_blank"> Check out further details here at Worldbank</a>  
+        </div>      
+        
+        <div class="four" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>4. Can you guess how many countries out of 193 countries report cases of COVID-19 by age and sex to WHO?</p>
+          <input type="radio" id="covid1" name="covid">
+          <label for="covid1">52% (100 countries)</label>
+          <input type="radio" id="covid2" class="answer" name="covid">
+          <label for="covid2"> 31% (60 countries)</label>
+          <p class="toggle">Only 60 countries provide data on COVID-19 to the World Health Organization.</p>
+         
+        </div>         
+        <div> <a href="https://www.unwomen.org/-/media/headquarters/attachments/sections/library/publications/2020/gender-equality-in-the-wake-of-covid-19-en.pdf?la=en&vs=5142" target="_blank">The materials above are from 2020 UN WOMEN REPORT. Check out UN Women for details</a></div>
+
+        <div class="five" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>5. Can you guess how many countries criminalize private, consensual sexual activity by same-sex individuals?</p>
+          <input type="radio" id="queer1" name="queer">
+          <label for="queer1">31</label>
+          <input type="radio" id="queer2" class="answer" name="queer">
+          <label for="queer2"> 71</label><br>
+          <a href="https://www.humandignitytrust.org/lgbt-the-law/map-of-criminalisation/" target="_blank">Check out for more details here</a>
+          <p class="toggle">6 of those countries even have death penalty for this, and this is a serious human rights issue.</p>
+        </div>    
+        <div class="six" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>6. Homophobic bullying occurs most frequently at this place, being 80% of total. Can you guess where it would be?</p>
+          <input type="radio" id="queer3" name="school">
+          <label for="queer3">Home</label>
+          <input type="radio" id="queer4" name="school" class="answer">
+          <label for="queer4" class="answer"> School</label>
+          <input type="radio" id="queer5" name="school" >
+          <label for="queer5"> Work</label>
+          <p class="toggle">According to Australian Human Rights Commission, 80% of the homophobic bullying occurs in school. </p>
+          <a href="https://humanrights.gov.au/our-work/education/face-facts-lesbian-gay-bisexual-trans-and-intersex-people" target="_blank">See here for more details</a>
+        </div>    
+
+        <div class="seven" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <p>7. Can you guess what 'Dark Money' in politics means?</p>
+          <input type="radio" id="dark1" name="dark">
+          <label for="dark1">Money that was printed in the low light settings so that the ink color gets preserved</label><br>
+          <input type="radio" id="dark2" name="dark">
+          <label for="dark2"> Money that is used by the criminals for money laundering</label><br>
+          <input type="radio" id="dark3" class="answer" name="dark">
+          <label for="dark3"> Money that has undisclosed source used to influence political results</label><br>
+          <p class="toggle">That's right, some use shell companies so that the original donors of certain politicians cannot be traced back. Nonprofits that are politically active have no legal obligations to disclose their donors either.</p>
+          <a href="https://www.opensecrets.org/dark-money/basics" target="_blank">See more here</a>         
+        </div>    
+        
+
+        <div class="eight" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+          <p>8. Why should I care about politics? Isn't it just a joke?</p>
+          <input type="checkbox" id="pol1">
+          <label for="pol1">Because politics impact almost almost every aspect of our lives.</label><br>
+          <input type="checkbox" id="pol2">
+          <label for="pol2"> Because I can make better decisions as to who to elect as the next representative of my country.</label><br>
+          <input type="checkbox" id="pol3">
+          <label for="pol3"> Because I want to know about how my hard-worked tax money is spent by those people running the government.</label><br>
+          <input type="checkbox" id="pol4">
+          <label for="pol4"> Because I want to be who I am without being penalized by the law made by some ignorant people.</label><br>
+          <input type="checkbox" id="pol5">
+          <label for="pol5"> All of the above is true.</label><br>
+          <p class="toggle">Well done! Politics is very important in our lives, as it impacts every little nitty gritty things and it shapes people and culture around it.<br>We can't afford to be ignorant when the selfish and power-hungry people make bad decisions that would affect your health and wellbeing!
+
+          </p>
+          <br>
+        </div>    
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js" integrity="sha512-cd6CHE+XWDQ33ElJqsi0MdNte3S+bQY819f7p3NUHgwQQLXSKjE4cPZTeGNI+vaxZynk1wVU3hoHmow3m089wA==" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+ 
+</body>
+
+</html>
